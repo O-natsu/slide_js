@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>template</title>
+<style>
+    .slide {
+        margin: 0 auto;
+        border: 1px solid black;
+        width: 720px;
+        background-color: black;
+    }
+    img {
+        max-width: 100%;
+    }
+    .toolbar {
+        overflow: hidden;
+        text-align: center;
+    }
+    .navi {
+        display: inline-block;
+    }
+    #prev, #next, #page{
+        float: left;
+        margin-top: 8px;
+        margin-left: 8px;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<section>
+    <div class="slide">
+        <div class="image-box">
+            <img id="main_image" src="images/image1.jpg">
+        </div>
+        <div class="toolbar">
+            <div class="navi">
+                <div id="prev">←</div>
+                <span id="page"></span>
+                <div id="next">→</div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="slide.js"></script>
+</body>
+</html>
